@@ -13,6 +13,9 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
+
     ecmaFeatures: {
       jsx: true,
     },
@@ -25,25 +28,5 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
-
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        selector: 'interface',
-        format: ['PascalCase'],
-        custom: {
-          regex: '[A-Z]',
-          match: true,
-        },
-      },
-      {
-        selector: 'typeAlias',
-        format: ['PascalCase'],
-        custom: {
-          regex: '[A-Z]',
-          match: true,
-        },
-      },
-    ],
   },
 }

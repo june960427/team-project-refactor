@@ -21,7 +21,7 @@ const errorHandler = async (error: CustomError) => {
     message: errorBody.message || '알 수 없는 오류가 발생했습니다',
   }
 
-  throw errorMessage
+  throw new Error(errorMessage.message)
 }
 
 const fetchApi = ky.extend({

@@ -20,6 +20,19 @@ export const theme = {
     black: '#2B2E33',
   },
 
+  defalutColor: {
+    navy: '#002561',
+    cwhite: '#F2F3F6',
+    white: '#FFFFFF',
+    black: '#2B2E33',
+  },
+
+  defaultPadding: {
+    inline: '20px',
+    block: '0.625em',
+    default: '0.625em 20px',
+  },
+
   fontSize: {
     small: '0.75em',
     medium: '0.875em',
