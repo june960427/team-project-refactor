@@ -28,5 +28,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'import/prefer-default-export': 'off',
   },
 }
